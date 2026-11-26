@@ -1,0 +1,325 @@
+<!-- #region head -->
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="icon" href="/layout_landing-page/assets/favicon-CNVvhNIu.png">
+    <title>MyBike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-uhMzYnFQ.css">
+  </head>
+  <!-- #endregion -->
+  <body class="page__body">
+    <!-- #region header + menu -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a href="#" class="top-bar__logo">
+              <img
+                src="data:image/png;base64,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"
+                alt="Bike logo"
+              />
+            </a>
+            <div class="top-bar__icons">
+              <div class="icon__wrapper">
+                <a href="tel:+12345555555" class="number icon--phone--number">+1 234 555-55-55</a>
+                <a href="tel:+12345555555" class="icon icon--phone"></a>
+              </div>
+              <a href="#menu" class="icon icon--menu"></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title appear">Take the Streets</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo">
+            <img
+              src="/layout_landing-page/assets/menu-logo-DOdDt3iW.png"
+              alt="Bike logo"
+            />
+          </a>
+          <a href="#" class="icon icon--close"></a>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#compare-bikes">Compare Bikes</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#details">Details</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+1 234 5555-55-55" class="menu__phone-number">
+            +1 234 5555-55-55
+          </a>
+          <a href="tel:+1 234 5555-55-55" class="menu__book-a-test-ride">
+            Book a test ride
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- #endregion -->
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="about-us reveal-left" id="about-us">
+            <h2 class="
+              about-us__title
+              section-title
+              section-title--align--left
+            ">Move Free</h2>
+
+            <p class="about-us__content">
+              Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
+            </p>
+          </section>
+
+          <section class="compare-bikes reveal-right" id="compare-bikes">
+            <h2 class="section-title">Compare bikes</h2>
+
+            <div class="compare-bikes__products">
+              <article class="product compare-bikes__product">
+                <img src="/layout_landing-page/assets/sporty-4-B2cCrsfg.png"
+                alt="Sporty 4 Bike"
+                class="product__photo"
+                >
+                <h3 class="product__title">Sporty 4</h3>
+                <p class="product__description">
+                  The iconic frame brought to a new performance height as a sporty, active ride.
+                </p>
+                <p class="product__price">$ 2 590</p>
+              </article>
+
+              <article class="product compare-bikes__product">
+                <img src="/layout_landing-page/assets/ride-in-town-st-CwvQYLP8.png"
+                alt="Ride in town ST Bike"
+                class="product__photo"
+                >
+                <h3 class="product__title">Ride in town ST</h3>
+                <p class="product__description">
+                  An open frame for an upright riding position as the most comfortable ride in town.
+                </p>
+                <p class="product__price">$ 2 590</p>
+              </article>
+
+              <article class="product compare-bikes__product">
+                <img src="/layout_landing-page/assets/agile-ride-3-OHvlNFoR.png"
+                alt="Agile ride 3 Bike"
+                class="product__photo">
+                <h3 class="product__title">Agile ride 3</h3>
+                <p class="product__description">
+                  The lightweight frame that has earned its street tread as a sleek, agile ride.
+                </p>
+                <p class="product__price">$ 2 090</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="details reveal-left" id="details">
+            <h2 class="section-title">The details</h2>
+
+            <div class="details__wrapper">
+              <article class="detail">
+                <div class="detail__photos">
+                  <a href="#" class="detail__link detail__link--wide">
+                    <img
+                      src="/layout_landing-page/assets/details-photo1-TR1bB2nT.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+
+                  <a href="#" class="detail__link detail__link--square">
+                    <img
+                      src="/layout_landing-page/assets/details-photo2-Gk_q_wL9.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+                </div>
+
+                <div class="detail__text">
+                  <h3 class="detail__title">Auto Unlock</h3>
+                  <p class="detail__description">
+                    The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.
+                  </p>
+                </div>
+              </article>
+
+              <article class="detail">
+                <div class="detail__photos">
+                  <a href="#" class="detail__link detail__link--wide">
+                    <img
+                      src="/layout_landing-page/assets/details-photo3-DgdPgOq4.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+
+                  <a href="#" class="detail__link detail__link--square">
+                    <img
+                      src="/layout_landing-page/assets/details-photo4-DRkX0U4i.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+                </div>
+
+                <div class="detail__text">
+                  <h3 class="detail__title">Range & Integrated lights</h3>
+                  <p class="detail__description">
+                    The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+                  </p>
+                </div>
+              </article>
+
+              <article class="detail">
+                <div class="detail__photos">
+                  <a href="#" class="detail__link detail__link--square">
+                    <img
+                      src="/layout_landing-page/assets/details-photo5-DsGrTGJG.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+
+                  <a href="#" class="detail__link detail__link--wide">
+                    <img
+                      src="/layout_landing-page/assets/details-photo6-G2_4u8hz.png"
+                      alt="bike detail"
+                      class="detail__photo"
+                    >
+                  </a>
+                </div>
+
+                <div class="detail__text">
+                  <h3 class="detail__title">Hydraulic disc brakes & Lightweight</h3>
+                  <p class="detail__description">
+                    Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+                  </p>
+                </div>
+              </article>
+
+              <div class="details__button">
+                <a href="#" class="button button__content">
+                  Explore
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="contacts reveal-right" id="contacts">
+            <h2 class="section-title">Contact us</h2>
+
+            <div class="contacts__wrapper">
+              <form
+                method="get"
+                onsubmit="this.reset(); return false;"
+                class="form contacts__form"
+              >
+                <div class="form__inputs">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    class="form__input"
+                    autocomplete="on"
+                    minlength="2"
+                    maxlength="50"
+                    required
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    class="form__input"
+                    autocomplete="on"
+                    required
+                  >
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    class="form__input form__input--textarea"
+                    minlength="10"
+                    maxlength="1000"
+                    required></textarea>
+                </div>
+
+                <button type="submit" class="button form__button">Send</button>
+              </form>
+
+              <div class="contacts__content">
+                <div class="contacts__info">
+                  <h4 class="contacts__title">Phone</h4>
+                  <a
+                    href="tel:+123455555555"
+                    target="_blank"
+                    class="contacts__description contacts__description--phone"
+                  >+1 234 5555-55-55
+                  </a>
+                </div>
+
+                <div class="contacts__info">
+                  <h4 class="contacts__title">Email</h4>
+                  <a
+                    href="mailto:hello@miami.com"
+                    target="_blank"
+                    class="contacts__description contacts__description--email"
+                  >hello@miami.com
+                  </a>
+                </div>
+
+                <div class="contacts__info">
+                  <h4 class="contacts__title">Address</h4>
+                  <a
+                    href="https://maps.app.goo.gl/z4L4rjKqcEnR5iWB6"
+                    target="_blank"
+                    class="contacts__description contacts__description--adress"
+                  >400 first ave. <br>suite 700<br>Minneapolis, MN 55401
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
